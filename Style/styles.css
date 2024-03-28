@@ -1,10 +1,12 @@
-.grid-container{
+.body{
             display: grid;
             grid-template-columns: 100%;
+            background-image: url(/images/Main.background.webp);
+            background-size: 100%;
 }
 .header{
             display: flex;
-            background-color: rgba(0, 0, 0, 0.856);
+            background: transparent;
             justify-content:space-between;
             align-items: center;
             min-height: 100px;
@@ -24,15 +26,15 @@
 .menu{
             list-style: none;
             display: flex;
-            font-size: 25px;
-            font-weight: 300;
+            font-size: 28px;
+            font-weight: 600;
             padding-right: 10px;
             margin-right: 20px;
 }
 .menu a {
             margin-left: 5px;
             text-decoration: none;
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             padding-right: 5px;
 }
 .menu a:hover{
@@ -42,12 +44,8 @@
             display: flex;
             flex-wrap: wrap;
             grid-template-rows: auto auto 650px;
-            padding: 50px;
 }
-.mainbg{
-            background-image: url(/images/Main.background.webp);
-            background-size: 100%;
-}
+
 .section1{
             display: flex;
             grid-template-columns: 2fr auto;
@@ -56,10 +54,12 @@
             justify-content: center;
 }
 .presentacion{
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: 120px 250px 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             font-size: 15px;
+            margin: 50px;
+            border: 2px solid black;
 }
 .titulo{
             font-size: 40px;
@@ -69,7 +69,7 @@
 .descripcion{
             font-size: 30px;
             text-align: center;
-            padding: 30px;
+            padding: 20px;
 }
 .logos{
             justify-self: center;      
@@ -79,6 +79,7 @@
             flex-basis: auto;
             width: 640px;
             height: 400px;
+            margin: 20px;
 }
 .img:hover{
             width: 300px;
@@ -95,7 +96,9 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 40px;
+            padding: 20px;
+            margin: 20px;
+            border: #000000 2px solid;
 }
 .luces{
             display: flex;
@@ -108,44 +111,57 @@
             margin-bottom: 30px;
 }
 .section3{
-            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
 }
 .titulos{
             font-size: 45px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             text-align: center;
-            margin: 30px;
 }
 .eventos{   
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             text-align: center;
             font-size: 25px;
+            gap: 25px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+.eventos div img{
+            border-radius: 15px;
+            display: flex;
+            max-width: 400px;
+            height: 400px;
+}
 .clientes{
-            display: grid;
-            grid-template-columns: auto;
-            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
 }
 .referencias{
             display: flex;
             margin-left: 10%;
             align-items: center;
-            padding: 20px;
+            text-align: center;
+            align-content: center;
+            width: 70%;
+            margin: 20px;
 }
 h4 {
             font-family: sans-serif;
             font-style: oblique;
             font-size: 25px;
+            margin: 15px;
 }
 .section5{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            border: #000000 2px solid;
 }
 .contacto{
             margin: 20px;
@@ -174,6 +190,7 @@ div.inputs{
             height: 30px;
             margin: 10px;
             font-size: 15px;
+            
 }
 .redes {
             display: flex;
@@ -187,8 +204,8 @@ div.inputs{
             justify-items: center;
             text-align: center;
             font-size: 22px;
-            background-color: rgba(0, 0, 0, 0.856);
-            color: #fff;
+            color: #000000;
+            font-weight: 600;
             min-height: 100px;
             padding: 20px;
 }
@@ -205,6 +222,10 @@ div.inputs{
             .imgeventos {
                         width: 500px;
                         height: 300px;
+            }
+            .eventos{
+                        display: flex;
+                        flex-direction: column;
             }
             div.inputs{
                         display: flex;
